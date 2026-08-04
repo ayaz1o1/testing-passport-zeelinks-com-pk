@@ -1,0 +1,273 @@
+/*==================================================
+  Zee Links AI Photo Studio
+  File: components.css
+  Version: v1.0.0
+==================================================*/
+
+
+/*==================================================
+ACTIVITY SECTION
+==================================================*/
+
+.activity-section{
+
+    padding:80px 0;
+
+    background:var(--surface-alt);
+
+}
+
+
+
+/*==================================================
+ACTIVITY CARD
+==================================================*/
+
+.activity-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+
+
+/*==================================================
+HEADER
+==================================================*/
+
+.activity-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 24px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+
+
+/*==================================================
+TITLE
+==================================================*/
+
+.activity-header h3{
+
+    margin:0;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+}
+
+/*==================================================
+ACTIVITY CONSOLE
+==================================================*/
+
+.activity-console{
+
+    height:320px;
+
+    overflow-y:auto;
+
+    padding:20px;
+
+    background:#0f172a;
+
+    color:#e2e8f0;
+
+    font-family:"Courier New",monospace;
+
+    font-size:.92rem;
+
+    line-height:1.7;
+
+}
+
+
+
+/*==================================================
+SCROLLBAR
+==================================================*/
+
+.activity-console::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+
+
+.activity-console::-webkit-scrollbar-thumb{
+
+    background:#475569;
+
+    border-radius:20px;
+
+}
+
+
+
+.activity-console::-webkit-scrollbar-track{
+
+    background:#1e293b;
+
+}
+
+
+
+/*==================================================
+LOG ITEM
+==================================================*/
+
+.log-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 12px;
+
+    margin-bottom:8px;
+
+    border-radius:10px;
+
+    word-break:break-word;
+
+    transition:.25s ease;
+
+}
+
+
+
+.log-item:hover{
+
+    background:rgba(255,255,255,.06);
+
+}
+
+
+
+/*==================================================
+TIME
+==================================================*/
+
+.log-time{
+
+    color:#94a3b8;
+
+    font-size:.82rem;
+
+    white-space:nowrap;
+
+}
+
+/*==================================================
+LOG TYPES
+==================================================*/
+
+.log-item.info{
+
+    border-left:4px solid #3b82f6;
+
+}
+
+
+
+.log-item.success{
+
+    border-left:4px solid #22c55e;
+
+}
+
+
+
+.log-item.warning{
+
+    border-left:4px solid #f59e0b;
+
+}
+
+
+
+.log-item.error{
+
+    border-left:4px solid #ef4444;
+
+}
+
+
+
+/*==================================================
+EMPTY CONSOLE
+==================================================*/
+
+.activity-console:empty::before{
+
+    content:"System initialized. Waiting for activity...";
+
+    display:block;
+
+    color:#94a3b8;
+
+    font-style:italic;
+
+}
+
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+    .activity-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+
+
+    .activity-console{
+
+        height:240px;
+
+        font-size:.85rem;
+
+        padding:15px;
+
+    }
+
+
+
+    .log-item{
+
+        padding:8px 10px;
+
+        font-size:.85rem;
+
+    }
+
+}
+
