@@ -1,0 +1,333 @@
+/*==================================================
+  Zee Links Design System
+  File: forms.css
+  Version: v3.0.0
+==================================================*/
+
+
+/*==================================================
+FORM GROUP
+==================================================*/
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+
+
+/*==================================================
+LABEL
+==================================================*/
+
+.form-group label{
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    color:var(--text-primary);
+
+}
+
+
+
+/*==================================================
+INPUTS
+==================================================*/
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    color:var(--text-primary);
+
+    transition:var(--transition-normal);
+
+}
+
+
+
+/*==================================================
+INPUT HOVER
+==================================================*/
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover{
+
+    border-color:var(--primary-light);
+
+}
+
+
+
+/*==================================================
+INPUT FOCUS
+==================================================*/
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:
+
+        0 0 0 4px rgba(90,70,181,.10);
+
+}
+
+
+
+/*==================================================
+SELECT
+==================================================*/
+
+.form-group select{
+
+    cursor:pointer;
+
+    appearance:none;
+
+    -webkit-appearance:none;
+
+    -moz-appearance:none;
+
+    background-image:
+
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%2364748B' viewBox='0 0 16 16'%3E%3Cpath d='M8 11 3 6h10L8 11z'/%3E%3C/svg%3E");
+
+    background-repeat:no-repeat;
+
+    background-position:right 18px center;
+
+    background-size:16px;
+
+    padding-right:50px;
+
+}
+
+
+
+/*==================================================
+TEXTAREA
+==================================================*/
+
+textarea{
+
+    min-height:120px;
+
+}
+
+
+
+/*==================================================
+CHECKBOX AREA
+==================================================*/
+
+.ai-options{
+
+    margin-top:45px;
+
+    padding:30px;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+
+.ai-options h3{
+
+    margin-bottom:24px;
+
+}
+
+
+
+/*==================================================
+CHECKBOX GRID
+==================================================*/
+
+.option-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+
+
+/*==================================================
+CHECKBOX LABEL
+==================================================*/
+
+.option-grid label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:16px;
+
+    border-radius:16px;
+
+    border:1px solid var(--border);
+
+    background:var(--surface);
+
+    cursor:pointer;
+
+    transition:var(--transition-normal);
+
+}
+
+
+
+.option-grid label:hover{
+
+    border-color:var(--primary);
+
+    background:rgba(90,70,181,.04);
+
+}
+
+
+
+/*==================================================
+CHECKBOX
+==================================================*/
+
+.option-grid input[type="checkbox"]{
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:var(--primary);
+
+}
+
+
+
+/*==================================================
+GENERATE AREA
+==================================================*/
+
+.generate-area{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:45px;
+
+}
+
+
+
+/*==================================================
+FORM MESSAGE
+==================================================*/
+
+.form-message{
+
+    margin-top:10px;
+
+    font-size:.9rem;
+
+    color:var(--text-secondary);
+
+}
+
+
+
+/*==================================================
+SUCCESS
+==================================================*/
+
+.input-success{
+
+    border-color:var(--success) !important;
+
+}
+
+
+
+/*==================================================
+ERROR
+==================================================*/
+
+.input-error{
+
+    border-color:var(--danger) !important;
+
+}
+
+
+
+/*==================================================
+ERROR MESSAGE
+==================================================*/
+
+.error-text{
+
+    margin-top:8px;
+
+    font-size:.85rem;
+
+    color:var(--danger);
+
+}
+
+
+
+/*==================================================
+READONLY
+==================================================*/
+
+input[readonly]{
+
+    background:var(--surface-hover);
+
+}
+
+
+
+/*==================================================
+PLACEHOLDER
+==================================================*/
+
+input::placeholder,
+textarea::placeholder{
+
+    color:var(--text-light);
+
+}

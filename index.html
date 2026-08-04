@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- ==========================================
+         META
+    =========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge">
+
+    <title>
+        AI Passport Photo Maker | Zee Links
+    </title>
+
+    <meta
+        name="description"
+        content="Create professional passport, visa and ID photos online using AI. Automatic background removal, enhancement and printable A4 sheets.">
+
+    <meta
+        name="keywords"
+        content="Passport Photo, Visa Photo, AI Passport Maker, ID Photo, Passport Size Photo, Zee Links">
+
+    <meta
+        name="author"
+        content="Zee Links">
+
+    <meta
+        name="robots"
+        content="index,follow">
+
+    <!-- ==========================================
+         OPEN GRAPH
+    =========================================== -->
+
+    <meta
+        property="og:title"
+        content="Zee Links AI Passport Photo Studio">
+
+    <meta
+        property="og:description"
+        content="Professional AI Passport Photo Maker">
+
+    <meta
+        property="og:type"
+        content="website">
+
+    <meta
+        property="og:image"
+        content="assets/images/cover.jpg">
+
+    <!-- ==========================================
+         FAVICON
+    =========================================== -->
+
+    <link
+        rel="icon"
+        href="assets/images/favicon.png">
+
+    <!-- ==========================================
+         GOOGLE FONTS
+    =========================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ==========================================
+         FONT AWESOME
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ==========================================
+         CSS
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="css/components.css">
+
+    <link
+        rel="stylesheet"
+        href="css/animations.css">
+
+</head>
+
+<body>
+
+<!-- ==========================================
+     HEADER
+=========================================== -->
+
+<header
+    class="main-header">
+
+    <div class="container">
+
+        <div class="header-wrapper">
+
+            <!-- Logo -->
+
+            <a
+                href="index.html"
+                class="logo">
+
+                <img
+                    src="assets/images/logo.png"
+                    alt="Zee Links">
+
+                <span>
+
+                    AI Photo Studio
+
+                </span>
+
+            </a>
+
+            <!-- Navigation -->
+
+            <nav
+                class="main-nav">
+
+                <ul>
+
+                    <li>
+
+                        <a href="#home">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#features">
+
+                            Features
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#documents">
+
+                            Documents
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#faq">
+
+                            FAQ
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Header Buttons -->
+
+            <div
+                class="header-actions">
+
+                <button
+                    id="themeToggle"
+                    class="icon-button">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+                <button
+                    class="primary-button">
+
+                    Get Started
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ==========================================
+     HERO
+=========================================== -->
+
+<section
+    id="home"
+    class="hero-section">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+
+                AI Powered Passport Photo Generator
+
+            </span>
+
+            <h1>
+
+                Create Professional Passport, Visa & ID Photos
+
+                <span>
+
+                    In Seconds
+
+                </span>
+
+            </h1>
+
+            <p>
+
+                Upload a photo or capture one using your camera.
+
+                Our AI prepares compliant passport-size photos with
+                automatic background removal, enhancement and print-ready
+                layouts.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <button
+                    id="uploadHeroButton"
+                    class="primary-button">
+
+                    <i class="fa-solid fa-upload"></i>
+
+                    Upload Photo
+
+                </button>
+
+                <button
+                    id="cameraHeroButton"
+                    class="secondary-button">
+
+                    <i class="fa-solid fa-camera"></i>
+
+                    Take Photo
+
+                </button>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+
+                    <strong>
+
+                        190+
+
+                    </strong>
+
+                    <span>
+
+                        Countries
+
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <strong>
+
+                        500+
+
+                    </strong>
+
+                    <span>
+
+                        Document Types
+
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <strong>
+
+                        AI
+
+                    </strong>
+
+                    <span>
+
+                        Background Removal
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+     WORKSPACE
+=========================================== -->
+
+<section
+    id="workspace"
+    class="workspace-section">
+
+    <div class="container">
+
+        <div class="workspace-grid">
+
+            <!-- ==================================
+                 UPLOAD PANEL
+            =================================== -->
+
+            <div class="workspace-card upload-card">
+
+                <div class="card-header">
+
+                    <h2>
+
+                        Upload Your Photo
+
+                    </h2>
+
+                    <p>
+
+                        Upload an existing photo or use your camera.
+
+                    </p>
+
+                </div>
+
+                <div
+                    id="dropZone"
+                    class="drop-zone">
+
+                    <input
+                        type="file"
+                        id="photoInput"
+                        accept="image/png,image/jpeg,image/webp"
+                        hidden>
+
+                    <div class="drop-zone-content">
+
+                        <div class="upload-icon">
+
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                        </div>
+
+                        <h3>
+
+                            Drag & Drop Photo
+
+                        </h3>
+
+                        <p>
+
+                            or click below to browse
+
+                        </p>
+
+                        <button
+                            id="browseButton"
+                            class="primary-button">
+
+                            <i class="fa-solid fa-folder-open"></i>
+
+                            Browse Photo
+
+                        </button>
+
+                        <button
+                            id="cameraButton"
+                            class="secondary-button">
+
+                            <i class="fa-solid fa-camera"></i>
+
+                            Open Camera
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="supported-formats">
+
+                    <span>
+
+                        Supported Formats
+
+                    </span>
+
+                    <div class="format-tags">
+
+                        <span>JPG</span>
+
+                        <span>PNG</span>
+
+                        <span>WEBP</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ==================================
+                 LIVE PREVIEW PANEL
+            =================================== -->
+
+            <div class="workspace-card preview-card">
+
+                <div class="card-header">
+
+                    <h2>
+
+                        Live Preview
+
+                    </h2>
+
+                    <p>
+
+                        Your uploaded image will appear here instantly.
+
+                    </p>
+
+                </div>
+
+                <div
+                    id="previewContainer"
+                    class="preview-container">
+
+                    <img
+
+                        id="previewImage"
+
+                        src="assets/images/placeholder-photo.svg"
+
+                        alt="Preview"
+
+                        draggable="false">
+
+                </div>
+
+                <div class="preview-information">
+
+                    <div class="info-item">
+
+                        <span>
+
+                            Status
+
+                        </span>
+
+                        <strong
+                            id="photoStatus">
+
+                            Waiting for photo
+
+                        </strong>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <span>
+
+                            Resolution
+
+                        </span>
+
+                        <strong
+                            id="photoResolution">
+
+                            --
+
+                        </strong>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <span>
+
+                            File Size
+
+                        </span>
+
+                        <strong
+                            id="photoSize">
+
+                            --
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     PHOTO CONFIGURATION
+=========================================== -->
+
+<section
+    id="configuration"
+    class="configuration-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+
+                Photo Configuration
+
+            </span>
+
+            <h2>
+
+                Configure Your Passport Photo
+
+            </h2>
+
+            <p>
+
+                Select your country, document type and output settings before generating your professional passport photo.
+
+            </p>
+
+        </div>
+
+        <div class="configuration-grid">
+
+            <!-- ==========================
+                 COUNTRY
+            ========================== -->
+
+            <div class="form-group">
+
+                <label
+                    for="countrySelect">
+
+                    Country
+
+                </label>
+
+                <select
+                    id="countrySelect">
+
+                    <option value="">
+
+                        Select Country
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- ==========================
+                 DOCUMENT
+            ========================== -->
+
+            <div class="form-group">
+
+                <label
+                    for="documentSelect">
+
+                    Document Type
+
+                </label>
+
+                <select
+                    id="documentSelect">
+
+                    <option value="passport">
+
+                        Passport
+
+                    </option>
+
+                    <option value="visa">
+
+                        Visa
+
+                    </option>
+
+                    <option value="idcard">
+
+                        National ID Card
+
+                    </option>
+
+                    <option value="driving">
+
+                        Driving Licence
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- ==========================
+                 PHOTO SIZE
+            ========================== -->
+
+            <div class="form-group">
+
+                <label
+                    for="photoSizeSelect">
+
+                    Photo Size
+
+                </label>
+
+                <select
+                    id="photoSizeSelect">
+
+                    <option>
+
+                        Auto
+
+                    </option>
+
+                    <option>
+
+                        35 × 45 mm
+
+                    </option>
+
+                    <option>
+
+                        2 × 2 inch
+
+                    </option>
+
+                    <option>
+
+                        50 × 50 mm
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- ==========================
+                 BACKGROUND
+            ========================== -->
+
+            <div class="form-group">
+
+                <label
+                    for="backgroundSelect">
+
+                    Background
+
+                </label>
+
+                <select
+                    id="backgroundSelect">
+
+                    <option>
+
+                        White
+
+                    </option>
+
+                    <option>
+
+                        Blue
+
+                    </option>
+
+                    <option>
+
+                        Light Grey
+
+                    </option>
+
+                    <option>
+
+                        Keep Original
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- ==========================
+                 PRINT LAYOUT
+            ========================== -->
+
+            <div class="form-group">
+
+                <label
+                    for="layoutSelect">
+
+                    Print Layout
+
+                </label>
+
+                <select
+                    id="layoutSelect">
+
+                    <option>
+
+                        Single Photo
+
+                    </option>
+
+                    <option>
+
+                        4×6 Sheet
+
+                    </option>
+
+                    <option>
+
+                        A4 Sheet
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- ==========================
+                 OUTPUT FORMAT
+            ========================== -->
+
+            <div class="form-group">
+
+                <label
+                    for="outputFormat">
+
+                    Output Format
+
+                </label>
+
+                <select
+                    id="outputFormat">
+
+                    <option>
+
+                        PNG
+
+                    </option>
+
+                    <option>
+
+                        JPG
+
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- ==========================
+             AI OPTIONS
+        ========================== -->
+
+        <div class="ai-options">
+
+            <h3>
+
+                AI Enhancements
+
+            </h3>
+
+            <div class="option-grid">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="removeBackground">
+
+                    Remove Background
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="faceAlignment">
+
+                    Auto Face Alignment
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="beautyEnhance">
+
+                    Beauty Enhancement
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="brightnessAdjust">
+
+                    Auto Brightness
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="contrastAdjust">
+
+                    Auto Contrast
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="sharpnessAdjust">
+
+                    Improve Sharpness
+
+                </label>
+
+            </div>
+
+        </div>
+
+        <!-- ==========================
+             GENERATE BUTTON
+        ========================== -->
+
+        <div class="generate-area">
+
+            <button
+                id="generateButton"
+                class="primary-button">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                Generate Passport Photo
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+     RESULTS
+=========================================== -->
+
+<section
+    id="results"
+    class="results-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+
+                Results
+
+            </span>
+
+            <h2>
+
+                Your Generated Passport Photos
+
+            </h2>
+
+            <p>
+
+                Review your generated passport photo, printable sheet and download in your preferred format.
+
+            </p>
+
+        </div>
+
+        <div class="results-grid">
+
+            <!-- ==========================
+                 PASSPORT PHOTO
+            ========================== -->
+
+            <div class="result-card">
+
+                <div class="result-header">
+
+                    <h3>
+
+                        Passport Photo
+
+                    </h3>
+
+                    <span
+                        class="status waiting"
+                        id="passportStatus">
+
+                        Waiting
+
+                    </span>
+
+                </div>
+
+                <div class="result-preview">
+
+                    <img
+
+                        id="passportPreview"
+
+                        src="assets/images/placeholder-photo.svg"
+
+                        alt="Passport Preview">
+
+                </div>
+
+                <button
+                    id="downloadPassport"
+                    class="secondary-button"
+                    disabled>
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Download PNG
+
+                </button>
+
+            </div>
+
+            <!-- ==========================
+                 PRINT LAYOUT
+            ========================== -->
+
+            <div class="result-card">
+
+                <div class="result-header">
+
+                    <h3>
+
+                        Printable Sheet
+
+                    </h3>
+
+                    <span
+                        class="status waiting"
+                        id="sheetStatus">
+
+                        Waiting
+
+                    </span>
+
+                </div>
+
+                <div class="result-preview">
+
+                    <img
+
+                        id="sheetPreview"
+
+                        src="assets/images/a4-placeholder.svg"
+
+                        alt="A4 Sheet">
+
+                </div>
+
+                <button
+                    id="downloadSheet"
+                    class="secondary-button"
+                    disabled>
+
+                    <i class="fa-solid fa-file-pdf"></i>
+
+                    Download A4 Sheet
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ==========================
+             PHOTO DETAILS
+        ========================== -->
+
+        <div class="photo-summary">
+
+            <div class="summary-card">
+
+                <h3>
+
+                    Photo Information
+
+                </h3>
+
+                <ul>
+
+                    <li>
+
+                        <span>
+
+                            Country
+
+                        </span>
+
+                        <strong
+                            id="summaryCountry">
+
+                            --
+
+                        </strong>
+
+                    </li>
+
+                    <li>
+
+                        <span>
+
+                            Document
+
+                        </span>
+
+                        <strong
+                            id="summaryDocument">
+
+                            --
+
+                        </strong>
+
+                    </li>
+
+                    <li>
+
+                        <span>
+
+                            Photo Size
+
+                        </span>
+
+                        <strong
+                            id="summarySize">
+
+                            --
+
+                        </strong>
+
+                    </li>
+
+                    <li>
+
+                        <span>
+
+                            Background
+
+                        </span>
+
+                        <strong
+                            id="summaryBackground">
+
+                            --
+
+                        </strong>
+
+                    </li>
+
+                    <li>
+
+                        <span>
+
+                            Output
+
+                        </span>
+
+                        <strong
+                            id="summaryFormat">
+
+                            PNG
+
+                        </strong>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- ==========================
+             ACTION BUTTONS
+        ========================== -->
+
+        <div class="results-actions">
+
+            <button
+                id="newPhotoButton"
+                class="secondary-button">
+
+                <i class="fa-solid fa-rotate-left"></i>
+
+                New Photo
+
+            </button>
+
+            <button
+                id="printButton"
+                class="secondary-button"
+                disabled>
+
+                <i class="fa-solid fa-print"></i>
+
+                Print
+
+            </button>
+
+            <button
+                id="downloadAllButton"
+                class="primary-button"
+                disabled>
+
+                <i class="fa-solid fa-download"></i>
+
+                Download All
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+     FOOTER
+=========================================== -->
+
+<footer
+    class="main-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- ==========================
+                 BRAND
+            ========================== -->
+
+            <div class="footer-column">
+
+                <img
+                    src="assets/images/logo.png"
+                    alt="Zee Links Logo"
+                    class="footer-logo">
+
+                <h3>
+
+                    Zee Links
+
+                </h3>
+
+                <p>
+
+                    AI Passport Photo Studio helps you create
+                    professional passport, visa and ID photos
+                    with modern AI technology.
+
+                </p>
+
+            </div>
+
+            <!-- ==========================
+                 QUICK LINKS
+            ========================== -->
+
+            <div class="footer-column">
+
+                <h4>
+
+                    Quick Links
+
+                </h4>
+
+                <ul>
+
+                    <li>
+
+                        <a href="#home">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#workspace">
+
+                            Upload
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#configuration">
+
+                            Settings
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#results">
+
+                            Results
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- ==========================
+                 SUPPORT
+            ========================== -->
+
+            <div class="footer-column">
+
+                <h4>
+
+                    Support
+
+                </h4>
+
+                <ul>
+
+                    <li>
+
+                        <a href="#">
+
+                            Help Center
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Privacy Policy
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Terms of Service
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Contact Us
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- ==========================
+                 CONTACT
+            ========================== -->
+
+            <div class="footer-column">
+
+                <h4>
+
+                    Contact
+
+                </h4>
+
+                <p>
+
+                    Karachi, Pakistan
+
+                </p>
+
+                <p>
+
+                    support@zeelinks.com.pk
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-youtube"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Zee Links.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- ==========================================
+     CAMERA MODAL
+=========================================== -->
+
+<div
+    id="cameraModal"
+    class="modal">
+
+    <div class="modal-content">
+
+        <button
+            id="closeCamera"
+            class="modal-close">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+        <video
+            id="cameraVideo"
+            autoplay
+            playsinline>
+
+        </video>
+
+        <div
+            class="camera-actions">
+
+            <button
+                id="captureButton"
+                class="primary-button">
+
+                <i class="fa-solid fa-camera"></i>
+
+                Capture Photo
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+     PROCESSING OVERLAY
+=========================================== -->
+
+<div
+    id="loadingOverlay"
+    class="loading-overlay">
+
+    <div class="loading-box">
+
+        <div class="loader"></div>
+
+        <h3>
+
+            Processing...
+
+        </h3>
+
+        <p
+            id="loadingMessage">
+
+            Please wait.
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+     TOAST CONTAINER
+=========================================== -->
+
+<div
+    id="toastContainer">
+
+</div>
+
+<!-- ==========================================
+     SCROLL TO TOP
+=========================================== -->
+
+<button
+    id="scrollTopButton"
+    class="scroll-top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- ==========================================
+     JAVASCRIPT
+=========================================== -->
+
+<script src="js/app.js"></script>
+
+<script src="js/upload.js"></script>
+
+<script src="js/camera.js"></script>
+
+<script src="js/processor.js"></script>
+
+<script src="js/download.js"></script>
+
+<script src="js/logger.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

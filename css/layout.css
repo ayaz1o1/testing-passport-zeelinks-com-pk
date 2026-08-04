@@ -1,0 +1,484 @@
+/*==================================================
+  Zee Links Design System
+  File: layout.css
+  Version: v3.0.0
+==================================================*/
+
+
+/*==================================================
+CONTAINER
+==================================================*/
+
+.container{
+
+    width:min(100% - 40px,var(--container));
+
+    margin-inline:auto;
+
+}
+
+
+
+/*==================================================
+SECTION
+==================================================*/
+
+section{
+
+    padding:90px 0;
+
+}
+
+
+
+.section-title{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+
+
+.section-title span{
+
+    display:inline-block;
+
+    margin-bottom:12px;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(90,70,181,.08);
+
+    color:var(--primary);
+
+    font-weight:var(--weight-semibold);
+
+}
+
+
+
+.section-title h2{
+
+    font-size:2.6rem;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.section-title p{
+
+    font-size:1.05rem;
+
+}
+
+
+
+/*==================================================
+HEADER
+==================================================*/
+
+.main-header{
+
+    position:sticky;
+
+    top:0;
+
+    left:0;
+
+    z-index:var(--z-header);
+
+    height:var(--header-height);
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+
+
+.header-wrapper{
+
+    height:var(--header-height);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+
+/*==================================================
+LOGO
+==================================================*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+
+
+.logo img{
+
+    width:52px;
+
+}
+
+
+
+.logo span{
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+}
+
+
+
+/*==================================================
+NAVIGATION
+==================================================*/
+
+.main-nav ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:36px;
+
+}
+
+
+
+.main-nav a{
+
+    position:relative;
+
+    color:var(--text-secondary);
+
+    font-weight:500;
+
+}
+
+
+
+.main-nav a:hover{
+
+    color:var(--primary);
+
+}
+
+
+
+.main-nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.3s;
+
+}
+
+
+
+.main-nav a:hover::after{
+
+    width:100%;
+
+}
+
+
+
+/*==================================================
+HEADER ACTIONS
+==================================================*/
+
+.header-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+
+
+/*==================================================
+HERO
+==================================================*/
+
+.hero-section{
+
+    padding-top:120px;
+
+    padding-bottom:70px;
+
+}
+
+
+
+.hero-content{
+
+    max-width:760px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+
+
+.hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 20px;
+
+    border-radius:999px;
+
+    background:rgba(51,200,232,.12);
+
+    color:var(--secondary-dark);
+
+    font-weight:600;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:3.8rem;
+
+    line-height:1.15;
+
+    margin-bottom:24px;
+
+}
+
+
+
+.hero-content h1 span{
+
+    color:var(--primary);
+
+}
+
+
+
+.hero-content p{
+
+    max-width:700px;
+
+    margin:0 auto;
+
+    font-size:1.1rem;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/*==================================================
+HERO BUTTONS
+==================================================*/
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:50px;
+
+}
+
+
+
+/*==================================================
+HERO STATS
+==================================================*/
+
+.hero-stats{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.hero-stats div{
+
+    text-align:center;
+
+}
+
+
+
+.hero-stats strong{
+
+    display:block;
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+}
+
+
+
+.hero-stats span{
+
+    color:var(--text-secondary);
+
+}
+
+
+
+/*==================================================
+WORKSPACE
+==================================================*/
+
+.workspace-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+
+}
+
+
+
+/*==================================================
+CONFIGURATION
+==================================================*/
+
+.configuration-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+}
+
+
+
+/*==================================================
+RESULTS
+==================================================*/
+
+.results-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+
+
+/*==================================================
+FOOTER
+==================================================*/
+
+.main-footer{
+
+    margin-top:100px;
+
+    background:var(--surface);
+
+    border-top:1px solid var(--border);
+
+    padding:70px 0 30px;
+
+}
+
+
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    2fr
+
+    1fr
+
+    1fr
+
+    1fr;
+
+    gap:40px;
+
+}
+
+
+
+.footer-bottom{
+
+    margin-top:50px;
+
+    padding-top:30px;
+
+    border-top:1px solid var(--border);
+
+    text-align:center;
+
+}
