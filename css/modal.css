@@ -1,0 +1,369 @@
+/*==================================================
+  Zee Links Design System
+  File: modal.css
+  Version: v3.0.0
+==================================================*/
+
+
+/*==================================================
+MODAL
+==================================================*/
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:24px;
+
+    background:rgba(15,23,42,.70);
+
+    backdrop-filter:blur(8px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:var(--transition-normal);
+
+    z-index:var(--z-modal);
+
+}
+
+
+.modal.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+
+/*==================================================
+MODAL CONTENT
+==================================================*/
+
+.modal-content{
+
+    width:100%;
+
+    max-width:900px;
+
+    background:var(--surface);
+
+    border-radius:24px;
+
+    padding:30px;
+
+    position:relative;
+
+    box-shadow:var(--shadow-xl);
+
+    animation:modalOpen .35s ease;
+
+}
+
+
+
+/*==================================================
+CLOSE BUTTON
+==================================================*/
+
+.modal-close{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    width:44px;
+
+    height:44px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--surface-hover);
+
+    transition:var(--transition-fast);
+
+}
+
+
+
+.modal-close:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+
+
+/*==================================================
+VIDEO
+==================================================*/
+
+#cameraVideo{
+
+    width:100%;
+
+    border-radius:20px;
+
+    background:#000;
+
+}
+
+
+
+/*==================================================
+CAMERA ACTIONS
+==================================================*/
+
+.camera-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:24px;
+
+}
+
+
+
+/*==================================================
+LOADING OVERLAY
+==================================================*/
+
+.loading-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(6px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:var(--transition-normal);
+
+    z-index:var(--z-loader);
+
+}
+
+
+
+.loading-overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+
+/*==================================================
+LOADING BOX
+==================================================*/
+
+.loading-box{
+
+    width:320px;
+
+    text-align:center;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:var(--surface);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+
+
+/*==================================================
+LOADER
+==================================================*/
+
+.loader{
+
+    width:60px;
+
+    height:60px;
+
+    margin:0 auto 25px;
+
+    border:5px solid var(--border);
+
+    border-top-color:var(--primary);
+
+    border-radius:50%;
+
+    animation:loaderSpin 1s linear infinite;
+
+}
+
+
+
+/*==================================================
+TOAST
+==================================================*/
+
+#toastContainer{
+
+    position:fixed;
+
+    top:25px;
+
+    right:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    z-index:var(--z-toast);
+
+}
+
+
+
+.toast{
+
+    min-width:300px;
+
+    padding:16px 20px;
+
+    border-radius:16px;
+
+    background:var(--surface);
+
+    box-shadow:var(--shadow-lg);
+
+    border-left:5px solid var(--primary);
+
+    animation:toastIn .35s ease;
+
+}
+
+
+
+.toast.success{
+
+    border-left-color:var(--success);
+
+}
+
+
+
+.toast.error{
+
+    border-left-color:var(--danger);
+
+}
+
+
+
+.toast.warning{
+
+    border-left-color:var(--warning);
+
+}
+
+
+
+/*==================================================
+ANIMATIONS
+==================================================*/
+
+@keyframes loaderSpin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+
+@keyframes modalOpen{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px) scale(.96);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0) scale(1);
+
+    }
+
+}
+
+
+
+@keyframes toastIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}

@@ -1,0 +1,288 @@
+/*==================================================
+  Zee Links Design System
+  File: responsive.css
+  Version: v3.0.0
+==================================================*/
+
+
+/*==================================================
+LARGE LAPTOP
+==================================================*/
+
+@media (max-width:1400px){
+
+    .container{
+
+        width:min(100% - 32px,var(--container));
+
+    }
+
+}
+
+
+/*==================================================
+LAPTOP
+==================================================*/
+
+@media (max-width:1200px){
+
+    .hero-content h1{
+
+        font-size:3.2rem;
+
+    }
+
+    .configuration-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media (max-width:992px){
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    .main-nav{
+
+        display:none;
+
+    }
+
+    .workspace-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .results-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .hero-content{
+
+        text-align:center;
+
+    }
+
+    .hero-stats{
+
+        gap:30px;
+
+    }
+
+}
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media (max-width:768px){
+
+    :root{
+
+        --header-height:70px;
+
+    }
+
+    .container{
+
+        width:calc(100% - 24px);
+
+    }
+
+    section{
+
+        padding:60px 0;
+
+    }
+
+    .hero-section{
+
+        padding-top:90px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .hero-content p{
+
+        font-size:1rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .primary-button,
+    .secondary-button{
+
+        width:100%;
+
+    }
+
+    .configuration-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .option-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .preview-information{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .results-actions{
+
+        flex-direction:column;
+
+    }
+
+    .results-actions button{
+
+        width:100%;
+
+    }
+
+}
+
+
+/*==================================================
+SMALL MOBILE
+==================================================*/
+
+@media (max-width:480px){
+
+    .workspace-card,
+    .result-card,
+    .summary-card{
+
+        padding:20px;
+
+        border-radius:18px;
+
+    }
+
+    .hero-badge{
+
+        font-size:.8rem;
+
+        padding:8px 14px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2rem;
+
+    }
+
+    .section-title h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .upload-icon{
+
+        width:80px;
+
+        height:80px;
+
+        font-size:2rem;
+
+    }
+
+    .drop-zone{
+
+        min-height:280px;
+
+    }
+
+    .preview-container{
+
+        min-height:280px;
+
+    }
+
+    .preview-container img{
+
+        max-height:240px;
+
+    }
+
+    .result-preview{
+
+        min-height:250px;
+
+    }
+
+}
+
+
+/*==================================================
+VERY SMALL DEVICES
+==================================================*/
+
+@media (max-width:360px){
+
+    .hero-content h1{
+
+        font-size:1.8rem;
+
+    }
+
+    .logo span{
+
+        display:none;
+
+    }
+
+    .scroll-top{
+
+        right:18px;
+
+        bottom:18px;
+
+    }
+
+}
